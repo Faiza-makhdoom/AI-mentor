@@ -15,6 +15,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
+api_key = st.secrets["GOOGLE_API_KEY"]
 
 st.set_page_config(page_title='Question Answering App')
 st.header('AI Mentor')
